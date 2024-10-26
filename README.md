@@ -2,7 +2,7 @@
 Welcome to our repository, combining the power of Kolmogorov-Arnold Networks and Convolutional Neural Networks (CNNs) to classify stars and galaxies using an astronomical dataset. This project pushes the boundaries of computer vision and astronomical research, offering a unique approach to stellar classification.
 
 # 📌 Overview
-This repository implements lightweight Kolmogorov-Arnold Network fused with CNNs to classify stellar sources such as stars and galaxies. The dataset used for this project was generated at the Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India, utilizing their 1.3m telescope.
+This repository implements lightweight Kolmogorov-Arnold Network fused with CNNs to classify stellar sources such as stars and galaxies. The dataset used for this project was generated at the Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India, utilizing their 1.3m telescope. Special thanks to github user https://github.com/jakariaemon/CNN-KAN/ who provided some of the code used in this proyect. For a full detailed presentation of the model's training and evaluation, please visit its official Kaggle notebook at https://www.kaggle.com/code/diegoexe/kan-for-star-galaxy-classification-90-45-val-acc/
 
 # 🗂 Dataset Description
 
@@ -37,3 +37,13 @@ Galaxies
 
 
 Find more information about the dataset https://www.kaggle.com/datasets/divyansh22/dummy-astronomy-data
+
+# Results
+
+As described in the Kaggle notebook in the link attached, the dataset was set up for a random split of the data with a ratio of 80:20 (80% for training and 20% for validation). The main challenge of the classification task lies on the low resolution of the images presented and the considerable imbalance presented by the classes in the dataset. Therefore heavy data augmentation and weights corresponding to the classes were needed to enhance the model's training, this concluding on a 90.45% validation accuracy
+
+![image](https://github.com/user-attachments/assets/57f5293c-b7e5-4f3a-a149-1a900bea7952)
+
+
+
+
